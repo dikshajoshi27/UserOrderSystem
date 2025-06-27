@@ -12,14 +12,14 @@ public class AuthServiceTests
     public async Task IsEmailRegisteredAsync_ReturnsTrue_WhenEmailExists()
     {
         // Arrange
-        var users = new List<User> { new() { Id = 1, Email = "sagunchauhan@yopmail.com", Password = "Sagun1234" } };
+        var users = new List<User> { new() { Id = 1, Email = "dikshajoshi@yopmail.com", Password = "Diksha1234" } };
         var mockRepo = new Mock<IUserRepository>();
         mockRepo.Setup(r => r.GetAllUsers()).Returns(users);
 
         var authService = new AuthService(mockRepo.Object);
 
         // Act
-        var result = await authService.IsEmailRegisteredAsync("sagunchauhan@yopmail.com");
+        var result = await authService.IsEmailRegisteredAsync("dikshajoshi@yopmail.com");
 
         // Assert
         Assert.True(result);

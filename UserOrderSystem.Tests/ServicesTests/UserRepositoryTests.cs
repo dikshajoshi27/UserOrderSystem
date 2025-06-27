@@ -15,8 +15,8 @@ public class UserRepositoryTests
         var expectedUser = new User
         {
             Id = 1,
-            Email = "sagunchauhan@harakirimail.com",
-            Password = "Sagun1"
+            Email = "dikshajoshi@harakirimail.com",
+            Password = "Diksha1"
         };
 
         var mockRepo = new Mock<IUserRepository>();

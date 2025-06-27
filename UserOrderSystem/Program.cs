@@ -30,8 +30,8 @@ app.Run();
 public class DummyUserRepository : IUserRepository
 {
     private readonly List<User> _users = [
-        new() { Id = 1, Email = "sagunchauhan@harakirimail.com", Password = "Sagun1" },
-        new() { Id = 2, Email = "sagunchauhan@yopmail.com", Password = "Sagun1234" }
+        new() { Id = 1, Email = "dikshajoshi@harakirimail.com", Password = "Diksha1" },
+        new() { Id = 2, Email = "dikshajoshi@yopmail.com", Password = "Diksha1234" }
     ];
 
     public User? GetUserById(int id) => _users.FirstOrDefault(u => u.Id == id);
