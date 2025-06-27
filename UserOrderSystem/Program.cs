@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using UserOrderSystem.Data;
 using UserOrderSystem.Interfaces;
 using UserOrderSystem.Models;
-using UserOrderSystem.Services;
+using UserOrderSystem.Services; 
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,4 +36,4 @@ public class DummyUserRepository : IUserRepository
 
     public User? GetUserById(int id) => _users.FirstOrDefault(u => u.Id == id);
     public List<User> GetAllUsers() => _users;
-}
+}  
