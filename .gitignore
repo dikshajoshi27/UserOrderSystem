@@ -1,0 +1,18 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS and IDE folders
+.vs/
+.idea/
+*.code-workspace
+
+# Others
+*.log
+.env
